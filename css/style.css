@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
+
+@font-face {
+    font-family: Athene;
+    src: url("../fonts/Athene.otf");
+}
+/* font-family: 'Athene', serif; */
+
+/* general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: #E5E5E5;
+}
+
+/* damit die navigation einen nicht-scrollbaren bg hat + alle sections "centered" */
+main {
+    background-color: #EFE8D7;
+    width: 1440px;
+    margin: auto;
+}
+
+/* ------------------- sticky navigation ------------------- */
+nav {
+    border-bottom: 2px solid #042A5A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    box-shadow: 0px 4px 2px -2px #282B2944;
+}
+
+nav h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #042A5A;
+    padding: 0 140px;
+    text-shadow: 2px 2px 2px #282B2944;
+}
+
+
+/* ------------------- header / hero ------------------- */
+header {
+    background-color: #EFE8D7;
+    width: 1440px;
+    height: 1378px;
+    padding-top: 50px;
+    text-shadow: 2px 3px 2px #282B2944;
+}
+
+/* main headline */
+h2 {
+    font-family: 'Athene', serif;
+    font-size: 160px;
+    font-weight: 400;
+    color: #042A5A;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 228px;
+    margin: 0 140px;
+    border-bottom: 1px solid #042A5A;
+    box-shadow: 0px 4px 2px -2px #282B2944;
+}
+
+/* hero image */
+header img {
+    width: 401px;
+    height: 602px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+
+/* occupation */
+header div {
+    margin-left: 520px;
+    margin-top: 50px;
+}
+
+header p {
+    display: inline;
+}
+
+.designer {
+    font-family: 'Athene', serif;
+    font-size: 21px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #042A5A;
+}
+
+.developer {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+    color: #042A5A;
+}
+
+
+/* ------------------- first section / "Release" ------------------- */
+
+.release {
+    width: 1440px;
+    height: 1587px;
+    background: #F4C4C4;
+}
+
+/* chapter number */
+.release h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #282B29;
+    padding-top: 100px;
+    padding-left: 120px;
+}
+
+/* chapter headline */
+.release h4 {
+    font-family: 'Athene', serif;
+    font-size: 160px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 200px;
+    color: #282B29;
+}
+
+.release h4:first-of-type {
+    margin-top: 50px;
+}
+
+/* prolog */
+.release article {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 36px;
+    color: #282B29;
+    margin-left: 720px;
+    margin-right: 120px;
+    margin-top: 15px;
+}
+
+/* ------ table / principles and value ------ */
+.principles-and-values {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-top: 100px;
+    margin-left: 720px;
+    margin-right: 120px;
+    width: 600px;
+}
+
+.table-head {
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: right;
+    border-bottom: 1px solid #282B29;
+}
+
+.principles-and-values div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #282B29;
+    padding: 30px 0;
+}
+
+.nr {
+    font-size: 14px;
+    line-height: 19.07px;
+    text-align: left;
+    width: 20px;
+    margin-right: 25px;
+}
+
+.value {
+    font-size: 21px;
+    line-height: 42px;
+    text-align: left;
+    width: 420px;
+}
+
+.principle {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+    width: 110px;
+}
+
+/* link / button "let's work together" */
+.release a img{
+    width: 105px;
+    margin-top: 105px;
+    margin-left: 1220px;
+    margin-right: 120px;
+    transition: transform .2s;
+}
+
+.release a img:hover {
+    transform: scale(1.5);
+}
+
+/* ------------------- second section / "Works" ------------------- */
+
+.works {
+    width: 1440px;
+    height: 3637px;
+    background: #DEB873;
+}
+
+/* chapter number */
+.works h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #7D2222;
+    padding-top: 100px;
+    padding-right: 120px;
+    text-align: right;
+}
+
+/* chapter headline */
+.works h4 {
+    font-family: 'Athene', serif;
+    font-size: 160px;
+    font-weight: 400;
+    color: #7D2222;
+    text-align: right;
+    text-transform: uppercase;
+    line-height: 200px;
+}
+
+.works h4:nth-of-type(1) {
+    margin-top: 50px;
+    margin-left: 980px;
+}
+
+.works h4:nth-of-type(2) {
+    margin-left: 1220px;
+}
+
+/* prolog */
+.works article {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 36px;
+    color: #7D2222;
+    margin-left: 120px;
+    margin-right: 760px;
+    margin-top: 15px;
+}
+
+/* project picture / size */
+.works img {
+    width: 747px;
+    height: 420px;
+}
+
+/* ------ project style / picture right ------ */
+.pic-right {
+    margin-top: 190px;
+}
+
+.pic-right2 {
+    margin-top: 68px;
+}
+
+.pic-right h5 {
+    font-family: 'Athene', serif;
+    font-size: 64px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 89.6px;
+    color: #7D2222;
+    margin-left: 120px;
+    position: relative;
+    z-index: 1;
+}
+
+.pic-right2 h5 {
+    font-family: 'Athene', serif;
+    font-size: 64px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 89.6px;
+    color: #7D2222;
+    margin-left: 120px;
+    position: relative;
+    z-index: 1;
+}
+
+/* link style */
+.pic-right a {
+    text-decoration: none;
+}
+
+/* hover effect */
+.pic-right a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-position: under;
+    color: #7D2222;
+}
+
+/* link style */
+.pic-right2 a {
+    text-decoration: none;
+}
+
+/* hover effect */
+.pic-right2 a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-position: under;
+    color: #7D2222;
+}
+
+.pic-right img:nth-of-type(1) {
+    position: relative;
+    top: -182px;
+    right: -573px;
+}
+
+.pic-right2 img:nth-of-type(1) {
+    position: relative;
+    top: -182px;
+    right: -573px;
+}
+
+/* ------ project style / picture left ------ */
+.pic-left {
+    margin-top: 68px;
+}
+
+.pic-left h5 {
+    font-family: 'Athene', serif;
+    font-size: 64px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 89.6px;
+    color: #7D2222;
+    margin-right: 120px;
+}
+
+/* link style */
+.pic-left a {
+    text-decoration: none;
+}
+
+/* hover effect */
+.pic-left a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-position: under;
+    color: #7D2222;
+}
+
+.pic-left img:nth-of-type(1) {
+    position: relative;
+    top: -182px;
+    left: 120px;
+}
+
+
+/* ------------------- third section / "Contact" ------------------- */
+.contact {
+    width: 1440px;
+    height: 1123px;
+    background: #D2D2D2;
+}
+
+/* chapter number */
+.contact h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #388883;
+    padding-top: 100px;
+    padding-left: 120px;
+}
+
+/* chapter headline */
+.contact h4 {
+    font-family: 'Athene', serif;
+    font-size: 160px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 200px;
+    color: #388883;
+}
+
+.contact h4:first-of-type {
+    margin-top: 50px;
+}
+
+/* epilog */
+.contact article {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 48px;
+    color: #388883;
+    margin-top: 15px;
+    margin-left: 470px;
+    margin-right: 550px;
+}
+
+/* links & contact */
+.links {
+    margin-top: 100px;
+    margin-right: 120px;
+}
+
+.links a{
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: #388883;
+    text-align: right;
+    line-height: 48px;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+}
